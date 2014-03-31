@@ -17,11 +17,11 @@
 	<platform name="android">
     	<config-file parent="/*" target="res/xml/config.xml">
         	<feature name="phonegap-plugin-appinfo">
-            	<param name="android-package" value="com.phonegap.plugins.AppInfo" />
+            	<param name="android-package" value="com.phonegap.plugins.CDVAppInfo" />
         	</feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
         </config-file>
-        <source-file src="src/android/DeviceInfo.java" target-dir="src/com/phonegap/plugins/" />
+        <source-file src="src/android/CDVAppInfo.java" target-dir="src/com/phonegap/plugins/" />
     </platform>
 </plugin>
