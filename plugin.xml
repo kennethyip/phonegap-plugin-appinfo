@@ -1,11 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>"/Users/kenneth/Documents/GitHub/deviceInfo/plugin.xml"
+<?xml version='1.0' encoding='utf-8'?>
 <plugin id="com.phonegap.plugins.appinfo" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>phonegap-plugin-appinfo</name>
     <js-module name="phonegap-plugin-appinfo" src="www/phonegap-plugin-appinfo.js">
         <clobbers target="cordova.plugins.phonegap-plugin-appinfo" />
     </js-module>
     <platform name="ios">
-        <config-file target="config.xml" parent="/widget/plugins">
+        <config-file parent="/*" target="config.xml">
             <feature name="phonegap-plugin-appinfo">
                 <param name="ios-package" value="CDVAppInfo" />
             </feature>
@@ -15,7 +15,7 @@
         <source-file src="src/ios/CDVAppInfo.m" />
     </platform>
 	<platform name="android">
-    	<config-file target="config.xml" parent="/widget/plugins">
+    	<config-file parent="/*" target="res/xml/config.xml">
         	<feature name="phonegap-plugin-appinfo">
             	<param name="android-package" value="com.phonegap.plugins.CDVAppInfo" />
         	</feature>
