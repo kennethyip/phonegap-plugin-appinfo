@@ -2,10 +2,10 @@ var exec = require('cordova/exec');
 
 var appInfo = {
 	getAppVersionName : function (callback, errCallbac) {
-		exec(callback, errCallbac, "phonegap-plugin-appinfo", "getAppVersionName", []);
+		exec(callback, errCallbac, "appinfo", "getAppVersionName", []);
 	},
 	getAppVersionCode : function (callback, errCallbac) {
-		exec(callback, errCallbac, "phonegap-plugin-appinfo", "getAppVersionCode", []);
+		exec(callback, errCallbac, "appinfo", "getAppVersionCode", []);
 		}
 };
 
