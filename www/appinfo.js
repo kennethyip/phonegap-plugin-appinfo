@@ -2,10 +2,10 @@ var exec = require('cordova/exec');
 
 var appInfo = {
 	getAppVersionName : function (callback, errCallbac) {
-		exec(callback, errCallbac, "appinfo", "getAppVersionName", []);
+		exec(callback, errCallbac, "AppInfo", "getAppVersionName", []);
 	},
 	getAppVersionCode : function (callback, errCallbac) {
-		exec(callback, errCallbac, "appinfo", "getAppVersionCode", []);
+		exec(callback, errCallbac, "AppInfo", "getAppVersionCode", []);
 		}
 };
 
